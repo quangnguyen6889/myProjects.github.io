@@ -11,14 +11,14 @@ body {
 #menu {
 	width: 100%;
 	height: 45px;
-	background-color: yellow;
+	background-color: red;
+	text-transform: uppercase;
 }
 
 #menu ul {
 	width: 80%;
 	height: 100%;
-	margin: auto;
-	
+	margin: auto;	
 }
 
 #menu ul li {
@@ -27,14 +27,19 @@ body {
 	line-height: 45px;
 	padding-right: 70px;
     padding-left: 70px;
-
+}
+#menu ul li:hover {
+	background-color: darkred;
 }
 
 #menu ul li a {
 	text-decoration: none;
-	color: red;
+	color: white;
 	font-size: 18px;
-    font-weight: bold;
+    font-weight: lighter;
+}
+#menu ul li a:hover {
+	color: white;
 }
 
 h2 {
