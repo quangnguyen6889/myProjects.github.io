@@ -1,11 +1,14 @@
 body {
-	width: 1000px;
 	margin: auto;
 	font-family: tahoma;
 }
+.main{
+	width: 1000px;
+	margin: auto;
+}
 
 #banner img {
-	width: 1000px;
+	width: 100%;
 }
 
 #menu {
