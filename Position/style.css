@@ -1,0 +1,25 @@
+#khung {
+  width: 600px;
+  height: 400px;
+  background-color: skyblue;
+  margin: auto;
+  border: 10px solid red;
+  z-index: 3;
+}
+
+#nen {
+  width: 590px;
+  height: 390px;
+  margin: 5px;
+  position: relative;
+  z-index: 2;
+}
+#nen > img {
+  position: absolute;
+  z-index: 1;
+}
+#text {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
