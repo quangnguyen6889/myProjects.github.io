@@ -1,50 +1,37 @@
 body {
   font-family: 'Pacifico', cursive;
+  box-sizing: border-box;
 }
 #khung {
-  width: 600px;
-  height: 400px;
-  background-color: ;
+  width: 800px;
   margin: auto;
-  border: 10px solid red;
-  z-index: 3;
-}
-
-#nen {
-  width: 590px;
-  height: 390px;
-  margin: 5px;
+  border: 10px solid lightpink;
   position: relative;
-  z-index: 2;
-}
-#nen > img {
-  position: absolute;
-  z-index: 1;
 }
 
-@keyframes zoom {
-  0% {transform: scale(1); opacity: 0; }
-  
-  100% {transform: scale(1.2); opacity: 1;}
-}
-#text {
+
+.trang-tri {
+  vertical-align: middle;
   position: absolute;
-  top: 151px;
-  left: 248px;
-  animation: zoom 3s ease infinite;
 }
 
-#cuu {
-  position: absolute;
-  bottom: 0px;
+#one {
+  max-width: 100%;
+  top: 0;
+  left: 0;
 }
 
-#loichuc {
+#two {
+  max-width: 35%;
+  left: 75px;
+  top: 90px;
+}
+
+#khung p {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  color: ghostwhite;
+  font-size: 1.7em;
   text-align: center;
-  font-size: 1.2em;
-  color: red;
-  
-  position: absolute;
-  bottom: 26px;
-  left: 145px;
 }

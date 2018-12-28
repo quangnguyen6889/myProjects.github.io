@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#wrap {
+    width: 1000px;
+    background-color: lightcyan;
+    margin: auto;
+}
+
+#banner {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*PHẦN MENU ngang*/
+#menu {
+    width: 100%;
+    height: 45px;
+}
+
+#menu ul {
+    list-style-type: none;
+    background-color: darkred;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+#menu ul li {
+    color: aliceblue;
+    display: inline-table;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+}
+
+#menu ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    width: 190px;
+}
+
+#menu ul li a:hover {
+    background-color: white;
+    color: darkred;
+}
+
+#menu ul li .sub-menu {
+    display: none;
+    
+}
+
+#menu ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+/*XONG PHẦN MENU NGANG*/
+
+#title {
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    color: lightseagreen;
+}
+
+#mon-an1 {
+    width: 100%;
+    position: relative;
+    padding-left: 25px;
+}
+
+#anh1 {
+    width: 400px;
+    height: 400px;
+}
+
+#thong-tin1 {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+#mon-an2 {
+    width: 100%;
+    margin-top: 150px;
+    position: relative;
+    padding-left: 25px;
+}
+
+#anh2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+#thong-tin2 {
+    width: 500px;
+    height: 400px;
+}
+
+#mon-an h2 {
+    padding-top: 20px;
+}
+
+#bottom {
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+}
