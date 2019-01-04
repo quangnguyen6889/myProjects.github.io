@@ -25,6 +25,14 @@ body {
 	text-align: center;
 	font-size: 16px;
 	padding: 0px;
+	position: relative;
+}
+#menu .avartar {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 #menu ul { padding: 0;}
 #menu ul li {

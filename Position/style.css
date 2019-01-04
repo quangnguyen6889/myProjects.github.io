@@ -2,13 +2,22 @@ body {
   font-family: 'Pacifico', cursive;
   box-sizing: border-box;
 }
+
+#container {
+  
+}
+
 #khung {
-  width: 800px;
+  width: 812px;
   margin: auto;
-  border: 10px solid lightpink;
+  border: 12px solid lightpink;
+  background-color: lightskyblue;
   position: relative;
 }
 
+#khung .chinh {
+  padding: 6px;
+}
 
 .trang-tri {
   vertical-align: middle;
