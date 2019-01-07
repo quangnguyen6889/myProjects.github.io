@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1000px;
+  margin: auto;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  height: 100px;
+  background-color: skyblue;
+  text-align: center;
+}
+nav {
+  height: 40px;
+  background-color: red;
+  text-align: center;
+}
+
+section {
+  width: 80%;
+  float: left;
+}
+article {
+  float: left;
+  margin: 30px;
+}
+article img {
+  max-width: 200px;
+  float: left;
+  border: 2px solid pink;
+  padding: 1px;
+  margin-right: 20px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+aside {
+  width: 20%;
+  float: right;
+  margin-top: 30px;
+}
+footer {
+  height: 50px;
+  background-color: grey;
+  text-align: center;
+}
