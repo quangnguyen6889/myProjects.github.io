@@ -9,6 +9,7 @@
 			font-family: 'Pacifico', cursive;
 			width: 1000px;
 			margin: auto;
+			text-align: center;
 		}
 
 		#banner {
@@ -21,6 +22,14 @@
 			position: absolute;
 			bottom: 20px;
    			left: 50px;
+		}
+		@keyframes move {
+			0% {left: 50px;}
+			50% {left: 550px;}
+			100% {left: 50px;}
+		}
+		.profiles:hover {
+			animation: move 5s ease-in-out 1;
 		}
 
 		.profiles img {
@@ -55,6 +64,7 @@
 		#menu ul li {
 			display: inline-table;
 		}
+
 		#menu ul li:hover {
 			background-color: lightpink;
 		}
@@ -68,13 +78,11 @@
 		}
 		
 		h1 {
-    		margin: 50px 40px -115px 362px;
+    		transition: transform 1s ease-in-out;
     		color: hotpink;
 		}
-
-		#main {
-			margin-top: 30px;
-			padding-top: 100px;
+		h1:hover {
+			transform: scale(1.5) rotate(1turn);
 		}
 
 		#main img {
@@ -84,18 +92,12 @@
     		border: 6px solid lightblue;
     		padding: 3px;
     		margin: 25px;
-    		transition: transform 1s linear;
+    		transition: transform 1s ease-in-out;
+    		box-shadow: 5px 5px 10px 1px lightgrey;
+    		
 		}
 		#main img:hover {
-			border-radius: 50%;
 			transform: scale(1.5) rotate(1turn);
-		}
-		#bottom {
-			width: 200px;
-			height: 250px;
-			margin: auto;
-			color: red;
-			text-align: center;
 		}
 	</style>
 </head>
@@ -135,17 +137,12 @@
 
 		<img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/30226769_222771711609078_2365264887256696347_n.jpg?_nc_cat=103&_nc_ht=scontent.fhan2-1.fna&oh=316ecd0deb6e981ef35e535b03ec6f20&oe=5CB1AA33" title="Hãy buông tha cho những bông hoa! Please...">
 	</div>
+	<p style="font-size: 1.5em; color: red">
+		Thân tặng em</br>
+		Đỗ Quang Nguyên</br>
+		Hà Nội, 09/01/2019</br>
+	</p>
 	<br>
 	<br>
-	<br>
-	<div id="bottom">
-		<h3>Thân tặng em</h3>
-		<h3>Đỗ Quang Nguyên</h3>
-		<h4>Hà Nội, 14/12/2018</h4>
-	</div>
-	<br>
-	<br>
-	<br>
-
 </body>
 </html>
