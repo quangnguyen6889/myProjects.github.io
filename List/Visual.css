@@ -50,6 +50,7 @@ body {
     text-decoration: none;
     display: block;
     width: 190px;
+    font-size: 1.1em;
 }
 
 #menu ul li a:hover {
