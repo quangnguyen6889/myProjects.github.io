@@ -66,6 +66,10 @@ body {
     display: block;
     position: absolute;
 }
+
+.fas {
+    padding-right: 5px;
+}
 /*XONG PHẦN MENU NGANG*/
 
 #title {
