@@ -8,18 +8,23 @@ function check(a, b) {
     if (b > a) {
       document.write(b);
     }
+    if (a == b) {
+      document.write(a + ' = ' + b);
+    }
   }
 }
 
 
 // BÀI 2
-function giaiThua(x){
-  if (x > 0){
+function giaiThua(x) {
+  if (x > 0 && parseInt(x) == x) {
     var n = 1;
     for(i=x; i>=1; i--){
-      n*=i
+      n*=i;
+      console.log(n);
+    } else {
+      return x + ' không phải là số nguyên dương.'
     }
-    console.log(n)
   }
 }
 
@@ -27,7 +32,7 @@ function giaiThua(x){
 // BÀI 3
 function mang_so(arr) {
   var newArr = [];
-  for (i=0; i<arr.length; i++){
+  for (i=0; i<arr.length; i++) {
     if (arr[i]%2==0){
     newArr.push(arr[i]);
     }
@@ -37,14 +42,14 @@ function mang_so(arr) {
 
 
 // BÀI 4
-function checking(username, password, cofirm) {
-  if (username != '' && username.length <= 20) {
-    if (password.length >= 6 && password.length <= 32) {
-      if (cofirm === password) {
+function checking(obj) {
+  if (obj.username != '' && obj.username.length <= 20) {
+    if (obj.password.length >= 6 && obj.password.length <= 32) {
+      if (obj.confirm === obj.password) {
         alert('"Pass"');
       } else alert('"Fail"');
-    }
-  }
+    } else alert('"Fail"');
+  } else alert('"Fail"');
 }
 
 
