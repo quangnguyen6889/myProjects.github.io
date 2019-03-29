@@ -43,13 +43,9 @@ function mang_so(arr) {
 
 // BÀI 4
 function checking(obj) {
-  if (obj.username != '' && obj.username.length <= 20) {
-    if (obj.password.length >= 6 && obj.password.length <= 32) {
-      if (obj.confirm === obj.password) {
+  if (obj.username != '' && obj.username.length <= 20 && obj.password.length >= 6 && obj.password.length <= 32 && obj.confirm === obj.password) {
         alert('"Pass"');
       } else alert('"Fail"');
-    } else alert('"Fail"');
-  } else alert('"Fail"');
 }
 
 
@@ -92,10 +88,7 @@ function cut(str) {
   }
   if (str.length < 10) {
     document.write(str);
-  }
-  if (str.length > 10) {
-    document.write(str.substr(0, 10) + '...');
-  }
+  } else document.write(str.substr(0, 10) + '...');
 }
 
 
@@ -125,22 +118,22 @@ function point(x) {
 function translate(str) {
   switch (str) {
     case 'FRA':
-        return 'Bonjour';
+        console.log('Bonjour');
         break;
     case 'SPA':
-        return 'Hola';
+        console.log('Hola');
         break;
     case 'RUS':
-        return 'Привет';
+        console.log('Привет');
         break;
     case 'ARA':
-        return 'مرحبا';
+        console.log('مرحبا');
         break;
     case 'CHI':
-        return '你好';
+        console.log('你好');
         break;
     default:
-        return 'xin chao'
+        console.log('xin chao');
         break;
   }
 }
@@ -148,10 +141,11 @@ function translate(str) {
 
 
 // BÀI 5
-var arr = ['false', 'false', 'false', 'true', 'false', 'true', 'false', 'true'];
-for (i=0; i<arr.length; i++) {
-  document.write(i + '. ' + arr[i] + '<br>')
-  if (arr[i] == 'true') {
-    break;
+function test(arr) {
+  for (i=0; i<arr.length; i++) {
+    document.write(i + '. ' + arr[i] + '<br>')
+    if (arr[i] == 'true') {
+      break;
+    }
   }
 }
