@@ -2,11 +2,16 @@
 <html>
 <head>
 	<title>HTML5 layout</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="jquery-3.4.0.min.js"></script>
+	
 </head>
 <body>
 	<header>banner</header>
+	<div id="menu-trigger">
+		<img style="padding-top: 10px;" src="icons8-menu-24.png" alt="">
+	</div>
 	<nav>
 		<ul>
 			<li><a href="#" title="">điện thoại</a></li>
@@ -17,33 +22,48 @@
 	</nav>
 	<section>
 	    <article>
-	      <img src="http://genknews.genkcdn.vn/thumb_w/660/2019/1/7/photo-1-15468530724791540116723.jpg" alt="">
-	      <h3>[CES 2019] Asus StudioBook S thực sự là một con “quái vật” đủ sức đánh bại MacBook Pro</h3>
-	      <p>Asus StudioBook S có thiết kế rất ấn tượng, với một màn hình 17 inch nhưng có kích thước tổng thể chỉ tương đương với MacBook Pro 15 inch.</p>
+	      	<img src="http://genknews.genkcdn.vn/thumb_w/660/2019/1/7/photo-1-15468530724791540116723.jpg" alt="">
+	      	<div class="content">
+	      		<h3>[CES 2019] Asus StudioBook S thực sự là một con “quái vật” đủ sức đánh bại MacBook Pro</h3>
+			    <p>Asus StudioBook S có thiết kế rất ấn tượng, với một màn hình 17 inch nhưng có kích thước tổng thể chỉ tương đương với MacBook Pro 15 inch.</p>
+		    </div>
 	    </article>
 	    <article>
 	    	<img src="http://genknews.genkcdn.vn/thumb_w/660/2019/1/7/photo-1-1546846303684295599379.jpg" alt="">
-	    	<h3>Samsung đang phát triển tai nghe không dây IconX mới, nhiều màu hơn, pin lớn hơn, giá có thể cao hơn</h3>
-	    	<p>Tai nghe IconX mới của Samsung cũng sẽ chuyển sang dùng thương hiệu Galaxy thay vì Gear như những thế hệ...</p>
+	    	<div class="content">
+		    	<h3>Samsung đang phát triển tai nghe không dây IconX mới, nhiều màu hơn, pin lớn hơn, giá có thể cao hơn</h3>
+		    	<p>Tai nghe IconX mới của Samsung cũng sẽ chuyển sang dùng thương hiệu Galaxy thay vì Gear như những thế hệ...</p>
+		    </div>
 	    </article>
 	    <article>
-	      <img src="http://genknews.genkcdn.vn/thumb_w/660/2019/1/7/photo-1-154685238491879024723.jpg" alt="">
-	      <h3>Thực hư phía sau clip dùng kẹo cao su để vá túi hiệu gây tranh cãi</h3>
-	      <p>Bạn nghĩ sao về việc dùng kẹo cao su và chocolate bọc đường để sửa túi da?</p>
+	      	<img src="http://genknews.genkcdn.vn/thumb_w/660/2019/1/7/photo-1-154685238491879024723.jpg" alt="">
+			<div class="content">
+			    <h3>Thực hư phía sau clip dùng kẹo cao su để vá túi hiệu gây tranh cãi</h3>
+			    <p>Bạn nghĩ sao về việc dùng kẹo cao su và chocolate bọc đường để sửa túi da?</p>
+			</div>
 	    </article>
 	    <article>
 	    	<img src="http://genknews.genkcdn.vn/thumb_w/660/2019/1/7/photo-1-1546850758180323590806.png" alt="">
-	    	<h3>[CES 2019] ASUS trình làng ROG Mothership laptop chơi game 2-trong-1 với thiết kế giống hệt Surface Pro</h3>
-	    	<p>Để bù lại cho màn hình 17,3 inch và trọng lượng lên tới 4,7kg, ROG Mothership có thiết kế bàn phím tách rời và...</p>
+			<div class="content">
+		    	<h3>[CES 2019] ASUS trình làng ROG Mothership laptop chơi game 2-trong-1 với thiết kế giống hệt Surface Pro</h3>
+		    	<p>Để bù lại cho màn hình 17,3 inch và trọng lượng lên tới 4,7kg, ROG Mothership có thiết kế bàn phím tách rời và...</p>
+	    	</div>
 	    </article>
 	</section>
 	<aside>
-	  <img style="max-width: 100%" src="https://i.pinimg.com/originals/d0/7f/8d/d07f8dcadefedb6efb869f6585dc7f91.jpg" alt="">
+	  <img style="width: 100%" src="https://i.pinimg.com/originals/d0/7f/8d/d07f8dcadefedb6efb869f6585dc7f91.jpg" alt="">
 	</aside>
 	<div style="clear: left">	
 	</div>
 	<footer>
 	  <address>liên hệ</address>
 	</footer>
+	<script>
+		$(document).ready(function() {
+			$("#menu-trigger").click(function() {
+				$("nav").slideToggle();
+			});
+		});
+	</script>
 </body>
 </html>
