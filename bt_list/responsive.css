@@ -1,0 +1,8 @@
+/* Độ rộng màn hình mà (lớn hơn 992px) thì sẽ chạy file desktop.css */
+@import url("desktop.css") only screen and (min-width: 993px);
+
+/* Độ rộng màn hình mà (lớn hơn 768px và nhỏ hơn 992px) thì sẽ chạy file tablet.css */
+@import url("tablet.css") only screen and (min-width: 768px) and (max-width: 992px);
+
+/* Độ rộng màn hình mà (nhỏ hơn 768px) thì sẽ chạy file mobile.css */
+@import url("mobile.css") only screen and (max-width: 767px);
