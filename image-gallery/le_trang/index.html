@@ -3,215 +3,10 @@
 <head>
 	<title>Lê Trang</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		* {	margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		body {
-			background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
-			padding: 50px 0;
-		}
-		#container {
-			font-family: 'Pacifico', cursive;
-			width: 1000px;
-			margin: auto;
-			padding: 20px;
-			text-align: center;
-			background-color: white;
-		}
-		#banner {
-			width: 100%;
-			margin: auto;
-			position: relative;
-		}
-		.profiles {
-			position: absolute;
-			bottom: 40px;
-   			left: 50px;
-		}
-		@keyframes move {
-			0% {left: 50px;}
-			50% {left: 500px;}
-			100% {left: 50px;}
-		}
-		.profiles:hover {
-			animation: move 5s ease-in-out 1;
-		}
-		.profiles img {
-			max-width: 190px;
-			float: left;
-			border: 5px solid lightskyblue;
-			border-radius: 50%;
-		}
-		.profiles p {
-			padding: 21px 0 21px 35px;
-			float: left;
-			color: white;
-			font-size: 2.5em;
-		}
-		
-		#menu {
-			width: 100%;
-			
-			margin: auto;
-			color: white;
-			background-color: hotpink;
-		}
-		#menu ul {
-			margin: 0;
-			padding: 0;
-			text-align: center;
-			list-style-type: none;
-		}
-		
-		#menu ul li {
-			display: inline-table;
-		}
-		#menu ul li:hover {
-			background-color: lightpink;
-		}
-		#menu ul li a {
-			text-decoration: none;
-    		color: white;
-    		padding: 0 70px 0 70px;
-    		font-size: 1.3em;
-    		line-height: 45px;
-    		border-right: 1px solid;
-		}
-		
-		h1 {
-			width: 400px;
-		    margin: auto;
-		    padding: 30px;
-    		color: hotpink;
-    		font-size: 2.5em;
-		}
-		
-		#main {
-			display: table;
-		}
-		
-		.photo {
-			float: left;
-    		width: 27.7%;
-    		/* height: 265px; */
-    		border: 6px solid lightblue;
-    		padding: 3px;
-    		margin: 27px;
-    		transition: transform 1s ease-in-out;
-    		box-shadow: 5px 5px 10px 3px lightgrey;	
-		}
-
-		#main img {
-    		width: 100%;
-    		vertical-align: middle;
-		}
-		.photo:hover {
-			transform: scale(1.5) rotate(1turn);
-		}
-		#bottom {
-			width: 100%;
-			height: 100px;
-		}
-		
-		#footer {
-			margin-top: 50px;
-			font-family: 'Fira Sans', sans-serif;
-			font-size: 2em;
-			color: red;
-		}
-
-		@media only screen and (max-width: 768px) {
-			body {
-				font-family: 'Pacifico', cursive;
-				padding: 0;
-			}
-
-			#container {
-				width: 100%;
-				
-				padding: 0px;
-				text-align: center;
-				background-color: white;
-			}
-
-			.profiles {
-				position: absolute;
-				text-align: center;
-				width: 50%;
-				bottom: -120%;
-	   			left: 25%;
-			}
-			@keyframes move {
-			}
-			.profiles:hover {
-			}
-			.profiles img {
-				max-width: 100%;
-				border: 5px solid lightskyblue;
-				border-radius: 50%;
-			}
-			.profiles p {
-				/* clear: both; */
-				padding: 21px 0;
-				color: red;
-				font-size: 2em;
-			}
-
-			#space {
-				height: 300px;
-			}
-
-			#menu {
-			/* width: 100%; */
-			
-			/* margin: auto; */
-			color: white;
-			background-color: hotpink;
-		}
-		#menu ul {
-			/* margin: 0; */
-			
-			/* text-align: justify; */
-			list-style-type: none;
-			line-height: 45px;
-		}
-		
-		#menu ul li {
-			display: block;
-			border-bottom: 1px solid;
-			padding-left: 5%;
-		}
-		#menu ul li:hover {
-			background-color: lightpink;
-		}
-		#menu ul li a {
-			text-decoration: none;
-    		color: white;
-    		padding: 0;
-    		font-size: 1.5em;
-    		font-weight: lighter;
-    		border: none;
-		}
-			.photo {
-				width: 90%;
-				clear: both;
-			}
-
-
-			.photo img {
-    		width: 100%;
-    		vertical-align: middle;
-		}
-		.photo:hover {
-			transform: /* scale(1.5) */ rotate(1turn);
-		}
-	}		
-	</style>
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 </head>
 <body>
 	<div id="container">
@@ -219,11 +14,13 @@
 			<img style="width: 100%" src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/58068350_1474809782656578_3860191201189691392_n.jpg?_nc_cat=103&_nc_oc=AQk4B0vFvIBiD8uf2y0Hx2FqKnLzfFIxN1FodkBoCvQTQip_9S41cyQaTlUf2OxPm_w&_nc_ht=scontent.fhan2-1.fna&oh=1c04913d07772c801302e203d2afdece&oe=5D346C6B">
 			<div class="profiles">
 				<img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/57882446_1474800175990872_5836359044817747968_n.jpg?_nc_cat=105&_nc_oc=AQkyPLfS1D_8uuUiAHIZgXoKpRdAKcaXruYdjRv1KFC_ynh9_kMbyX9zXfW8WvHxskY&_nc_ht=scontent.fhan2-4.fna&oh=948a427c12d602a6c870a4678eb31df7&oe=5D32DB7B" alt="">
-				<p>Lê Trang</p>
+					<p>Lê Trang</p>
 			</div>
 		</div>
-		<div id="space">
-			
+		<div id="space"></div>
+		<div id="menu-trigger">
+			Menu
+			<!-- <img style="padding-top: 10px;" src="icons8-menu-24.png" alt=""> -->
 		</div>
 		<div id="menu">
 			<ul>
@@ -334,5 +131,13 @@
 			</p>
 		</div>
 	</div>
+	<script src="jquery-3.4.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#menu-trigger").click(function() {
+				$("#menu").slideToggle();
+			});
+		});
+	</script>
 </body>
 </html>
