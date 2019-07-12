@@ -58,84 +58,86 @@ body {
 	border-bottom: 1px solid white;
 	font-size: 1.3em;
 	border-radius: 10px;
-} */
+	} */
 
-#menu {
-	width: 90%;
-	margin: 0 auto;
-	color: white;
-	/* display: none; */
-}
+	#menu {
+		width: 90%;
+		margin: 0 auto;
+		color: white;
+		/* display: none; */
+	}
 
-#menu ul {
-	margin: 0;
-	padding: 0;
-	/* text-align: left; */
-	list-style-type: none;
-}
+	#menu ul {
+		margin: 0;
+		padding: 0;
+		/* text-align: left; */
+		list-style-type: none;
+	}
 
-#menu ul li {
-	width: 100%;
-	float: none;
-	line-height: 45px;
-	border-bottom: 1px solid;
-	border-radius: 10px;
-	background-color: hotpink;
-}
+	#menu ul li {
+		width: 100%;
+		float: none;
+		line-height: 45px;
+		border-bottom: 1px solid;
+		border-radius: 10px;
+		background-color: hotpink;
+	}
 
-#menu ul li:hover {
-	background-color: lightpink;
-}
+	#menu ul li:hover {
+		background-color: lightpink;
+	}
 
-#menu ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.3em;
-	display: block;		
-}
+	#menu ul li a {
+		text-decoration: none;
+		color: white;
+		font-size: 1.3em;
+		display: block;		
+	}
 
-h1 {
-	width: 100%;
-	margin: auto;
-	padding: 5%;
-	color: hotpink;
-	font-size: 2.2em;
-}
+	h1 {
+		width: 100%;
+		margin: auto;
+		padding: 5%;
+		color: hotpink;
+		font-size: 2.2em;
+	}
 
-#main {
-	width: 100%;
-	margin-top: 5vh;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+	#main {
+		width: 100%;
+		margin-top: 5vh;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-.photo {
-	margin: ;
-	width: 80%;
-	border: 10px solid lightblue;
-	padding: 3px;
-	margin: 3%;
-	box-shadow: 5px 5px 10px 3px lightgrey;
-	transition: transform 1s ease-in-out;
-}
+	.photo {
+		margin: ;
+		width: 80%;
+		border: 10px solid lightblue;
+		padding: 3px;
+		margin: 3%;
+		box-shadow: 5px 5px 10px 3px lightgrey;
+		transition: transform 1s ease-in-out;
+	}
 
-.photo img {
-	width: 100%;
-	vertical-align: middle;
-}
+	.photo img {
+		width: 100%;
+		vertical-align: middle;
+	}
 
-.photo:hover {
-	transform: scale(1.2) rotate(360deg);
-}
+	.photo:hover {
+		transform: scale(1.2) rotate(360deg);
+	}
 
-#footer {
-	margin-top: 50px;
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 1.5em;
-	width: 100%;
-	height: 40vw;
-	background: hotpink;
-	padding: 30px;
-	color: white;
-}
+	
+	#footer {
+		margin-top: 50px;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 6vw;
+		width: 100%;
+		height: 40vw;
+		background: hotpink;
+		padding: 30px;
+		color: white;
+	}
+
