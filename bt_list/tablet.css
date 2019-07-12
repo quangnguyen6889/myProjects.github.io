@@ -87,6 +87,7 @@
 /* Phần chính của website */
 #main {
     background-color: lightcyan;
+    padding-bottom: 20vw;
 }
 
 #title {
@@ -104,11 +105,6 @@
     background-color: rgba(0, 148, 0, 0.7);
 }
 
-#mon-an1 img {
-    float: left;
-    width: 40%;
-}
-
 #thong-tin1, #thong-tin2 {
     width: 60%;
     float: left;
@@ -124,12 +120,12 @@
     background-color: rgba(255, 0, 0, 0.7);
 }
 
-#photo {
+.photo {
     width: 40%;
     float: left;
 }
 
-#photo img {
+.photo img {
     width: 100%;
 }
 
@@ -141,7 +137,6 @@ h2 {
 
 #bottom {
     width: 100%;
-    margin-top: 20vw;
     padding: 3vw;
     background-color: rgba(255, 5, 0, 1)
 }

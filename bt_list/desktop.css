@@ -79,6 +79,7 @@
 /* Phần chính của website */
 #main {
     background-color: lightcyan;
+    padding-bottom: 20vw;
 }
 
 #title {
@@ -95,10 +96,13 @@
     display: flex;
     background-color: rgba(0, 148, 0, 0.7);
 }
-
-#mon-an1 img {
-    float: left;
+.photo {
     width: 40%;
+    float: left;
+}
+
+.photo img {
+    width: 100%;
 }
 
 #thong-tin1, #thong-tin2 {
@@ -116,15 +120,6 @@
     background-color: rgba(255, 0, 0, 0.7);
 }
 
-#photo {
-    width: 40%;
-    float: left;
-}
-
-#photo img {
-    width: 100%;
-}
-
 h2 {
     margin: 0 0 3vw 3vw;
 }
@@ -133,7 +128,6 @@ h2 {
 
 #bottom {
     width: 100%;
-    margin-top: 20vw;
     padding: 3vw;
     background-color: rgba(255, 5, 0, 1)
 }

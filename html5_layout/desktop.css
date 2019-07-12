@@ -8,10 +8,8 @@ body {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
-header {
-  height: 100px;
-  background-color: skyblue;
-  text-align: center;
+header img {
+  width: 100%;
 }
 #menu-trigger {
   display: none;
@@ -67,8 +65,6 @@ aside {
   float: right;
   margin-top: 30px;
 }
-footer {
-  height: 50px;
-  background-color: grey;
-  text-align: center;
+footer img {
+  width: 100%;
 }
