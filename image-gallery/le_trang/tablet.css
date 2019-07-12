@@ -1,140 +1,143 @@
+* {	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+	padding: 0;
+}
+#container {
+	font-family: 'Pacifico', cursive;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	background-color: white;
+}
+#banner {
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+.profiles {
+	width: 40%;
+	position: absolute;
+	bottom: -70%;
+	left: 30%;
+}
+@keyframes move {
+	0% {left: 0em;}
+	50% {left: 0em;}
+	100% {left: 0em;}
+}
+.profiles:hover {
+	animation: none;
+}
+.profiles img {
+	max-width: 100%;
+	border: 0.3em solid lightskyblue;
+	border-radius: 50%;
+}
+.profiles p {
+	line-height: 10vw;
+	color: hotpink;
+	font-size: 3em;
+}
 
-			* {	margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-			body {
-				background-color: white;
-				padding: 0;
-			}
-			#container {
-				font-family: 'Pacifico', cursive;
-				width: 100%;
-				margin: 0 auto;
-				padding: 0;
-				text-align: center;
-				background-color: white;
-			}
-			#banner {
-				width: 100%;
-				margin: auto;
-				position: relative;
-			}
-			.profiles {
-				width: 40%;
-				position: absolute;
-				bottom: -70%;
-	   			left: 30%;
-			}
-			@keyframes move {
-				0% {left: 0em;}
-				50% {left: 0em;}
-				100% {left: 0em;}
-			}
-			.profiles:hover {
-				animation: none;
-			}
-			.profiles img {
-				max-width: 100%;
-				border: 0.3em solid lightskyblue;
-				border-radius: 50%;
-			}
-			.profiles p {
-				line-height: 10vw;
-				color: hotpink;
-				font-size: 3em;
-			}
+#space {
+	width: 100%;
+	height: 35vw;
+}
 
-			#space {
-				width: 100%;
-				height: 35vw;
-			}
+/* #menu-trigger {
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+	line-height: 45px;
+	background-color: hotpink;
+	border-bottom: 1px solid white;
+	font-size: 1.3em;
+	border-radius: 10px;
+} */
 
-			#menu-trigger {
-				width: 90%;
-				margin: 0 auto;
-				color: white;
-				line-height: 45px;
-	  			background-color: hotpink;
-	  			border-bottom: 1px solid white;
-	  			font-size: 1.3em;
-	  			border-radius: 10px;
-			}
-			
-			#menu {
-				width: 90%;
-				margin: 0 auto;
-				color: white;
-				background-color: hotpink;
-				display: none;
-				border-radius: 10px;
-			}
+#menu {
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+	
+	/* display: none; */
+	
+}
 
-			#menu ul {
-				margin: 0;
-				padding: 0;
-				/* text-align: left; */
-				list-style-type: none;
-			}
-			
-			#menu ul li {
-				width: 100%;
-				float: none;
-				line-height: 45px;
-				border-bottom: 1px solid;
-			}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	/* text-align: left; */
+	list-style-type: none;
+}
 
-			#menu ul li:hover {
-				background-color: lightpink;
-			}
+#menu ul li {
+	width: 100%;
+	float: none;
+	line-height: 45px;
+	border-bottom: 1px solid;
+	border-radius: 10px;
+	background-color: hotpink;
+}
 
-			#menu ul li a {
-				text-decoration: none;
-	    		color: white;
-	    		font-size: 1.3em;  		
-			}
-			
-			h1 {
-				width: 400px;
-			    margin: auto;
-			    padding: 30px;
-	    		color: hotpink;
-	    		font-size: 2.5em;
-			}
-			
-			#main {
-				width: 100%;
-				margin-top: 5vh;
-	  			display: flex;
-	  			flex-wrap: wrap;
-	  			justify-content: center;
-			}
+#menu ul li:hover {
+	background-color: lightpink;
+}
 
-			.photo {
-				width:43%;
-				border: 10px solid lightblue;
-				padding: 3px;
-				margin: 2%;
-				box-shadow: 5px 5px 10px 3px lightgrey;
-				transition: transform 1s ease-in-out;
-			}
-			
-			.photo img {
-				width: 100%;
-	  			vertical-align: middle;
-	   		}
+#menu ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
+	display: block;
 
-			.photo:hover {
-				transform: scale(1.2) rotate(360deg);
-			}
-			
-			#footer {
-				margin-top: 50px;
-				font-family: 'Fira Sans', sans-serif;
-				font-size: 2em;
-				width: 100%;
-	    		height: 180px;
-	    		background: hotpink;
-	    		padding: 30px;
-				color: white;
-			}
+}
+
+h1 {
+	width: 400px;
+	margin: auto;
+	padding: 30px;
+	color: hotpink;
+	font-size: 2.5em;
+}
+
+#main {
+	width: 100%;
+	margin-top: 5vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.photo {
+	width:43%;
+	border: 10px solid lightblue;
+	padding: 3px;
+	margin: 2%;
+	box-shadow: 5px 5px 10px 3px lightgrey;
+	transition: transform 1s ease-in-out;
+}
+
+.photo img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.photo:hover {
+	transform: scale(1.2) rotate(360deg);
+}
+
+#footer {
+	margin-top: 50px;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 2em;
+	width: 100%;
+	height: 180px;
+	background: hotpink;
+	padding: 30px;
+	color: white;
+}
