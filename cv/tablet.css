@@ -15,7 +15,7 @@ body {
 }
 #info {
 	width: 30%;
-	height: 1593px;
+	/* height: 1593px; */
 	float: left;
 	background-color: #007fb8;
 }
@@ -54,8 +54,8 @@ body {
 }
 
 #content {
-	width: 70%;
-	float: left;
+	width: 100%;
+	/* float: left; */
 	padding: 5%;
 }
 

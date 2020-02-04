@@ -3,14 +3,50 @@ import React, { Component } from 'react';
 class Content extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            trangThai: 0
+        }
 
     }
 
     thongbao = () => { alert("cach xu li tuong tac trong react") }
-
     thongbao2 = () => { alert("xin đừng remove") }
 
-    thongbao3 = (x) => { alert(x + 10) }
+    renderButton = () => (
+        <div className="row">
+            <div className="btn btn-info" onClick={() => this.editClick()}>Edit</div>
+            <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
+        </div>
+    )
+
+    renderForm = () => (
+        <div className="row">
+            <div className="form-group">
+                <input defaultValue={this.props.tieude} type="text" name="ten" className="form-control" />
+
+            </div>
+            <div className="form-group">
+
+                <div className="btn btn-danger" onClick={() => this.saveClick()}>Save</div>
+            </div>
+        </div>
+    )
+
+    displayCheck = () => {
+        if (this.state.trangThai === 0) {
+            return this.renderButton();
+        } else {
+            return this.renderForm();
+        }
+    }
+
+    editClick = () => {
+        this.setState({ trangThai: 1 });
+    }
+
+    saveClick = () => {
+        this.setState({ trangThai: 0 });
+    }
 
     render() {
         return (
@@ -31,11 +67,9 @@ class Content extends Component {
                                         generators of copy-paste text like this one. So currently this is basically a duplicate of the
                                         above, but I think I'll try to collect a few more "cool" text fonts, like the old enlgish one,
                         and specialise this a bit.</p>
-                                    <div className="row">
-                                        <div className="btn btn-info" onClick={this.thongbao}>Edit</div>
-                                        <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
-                                        <div className="btn btn-warning" onClick={() => this.thongbao3("HaHa x")}>Tb 3</div>
-                                    </div>
+
+                                    {this.displayCheck()}
+
                                     <hr />
                                 </div>
                             </div>

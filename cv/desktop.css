@@ -12,12 +12,13 @@ body {
 }
 #wrap {
 	width: 900px;
+	height: 1800px;
 	background-color: white;
 	margin: 5% auto;
 }
 #info {
 	width: 30%;
-	height: 1562.48px;
+	height: 100%;
 	float: left;
 	background-color: #007fb8;
 }
@@ -57,6 +58,7 @@ body {
 
 #content {
 	width: 70%;
+	height: 100%;
 	float: left;
 	padding: 5%;
 	background-color: white;
