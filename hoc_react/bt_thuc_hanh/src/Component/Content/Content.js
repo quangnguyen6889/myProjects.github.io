@@ -6,7 +6,6 @@ class Content extends Component {
         this.state = {
             trangThai: 0
         }
-
     }
 
     thongbao = () => { alert("cach xu li tuong tac trong react") }
