@@ -8,8 +8,7 @@ class Content extends Component {
         }
     }
 
-    thongbao = () => { alert("cach xu li tuong tac trong react") }
-    thongbao2 = () => { alert("xin đừng remove") }
+    thongbao2 = () => { alert("button Remove da duoc kich hoat") }
 
     renderButton = () => (
         <div className="row">
@@ -21,7 +20,7 @@ class Content extends Component {
     renderForm = () => (
         <div className="row">
             <div className="form-group">
-                <input defaultValue={this.props.tieude} type="text" name="ten" className="form-control" />
+                <input ref={(dulieunhap) => { this.trunggian = dulieunhap }} defaultValue={this.props.tieude} type="text" name="ten" className="form-control" />
 
             </div>
             <div className="form-group">
@@ -45,6 +44,7 @@ class Content extends Component {
 
     saveClick = () => {
         this.setState({ trangThai: 0 });
+        console.log(this.trunggian.value);
     }
 
     render() {

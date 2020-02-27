@@ -5,17 +5,21 @@ Viết 1 function tính bình phương của 1 số.
 */
 
 function binhPhuong(x) {
-  return x*x
+    return x * x
 }
 
 
 /* BÀI 2
-Viết 1 function tính bình phương của (3a + 2b - c).
-Tham số truyền vào là 3 số a, b, c.
+Viết function tính thế kỷ của 1 năm. Biết thế kỷ thứ nhất tính từ năm 1 đến 100.
+Tham số truyền vào là 1 số nguyên dương.
+Kết quả là thế kỷ của năm. Ví dụ 2019 => Kết quả là 21.
 */
 
-function binhPhuong_bai2(a, b, c) {
-  return binhphuong(3*a + 2*b -c)
+function tinhTheKy(x) {
+    function chiaNam() {
+        return x / 100
+    }
+    return Math.ceil(chiaNam());
 }
 
 
@@ -28,8 +32,8 @@ cuối chuỗi có dấu "..." biểu thị là chuỗi bị cắt.
 */
 
 function cut(str) {
-  var newStr = str.substr(0, 10);
-  return newStr + '...'
+    var newStr = str.substr(0, 10);
+    return newStr + '...'
 }
 
 
@@ -41,7 +45,7 @@ Ví dụ "welcome to Techmaster" sẽ được convert thành "Welcome to techma
 */
 
 function vietHoa(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
 
 
@@ -53,9 +57,9 @@ Gợi ý: có thể dùng phương thức sort() hoặc object Math,
 chú ý khi sort số khác với chữ.
 */
 
-function sapXep(arr){
-  var newArr = arr.sort(function(a,b){return a-b});
-  return newArr[0]
+function sapXep(arr) {
+    var newArr = arr.sort(function (a, b) { return a - b });
+    return newArr[0]
 }
 
 
@@ -70,11 +74,11 @@ Gợi ý: dùng phương thức join() để biến 1 mảng thành 1 chuỗi
 và chèn thêm ký tự <br> để hiển thị xuống dòng trong HTML.
 */
 
-function name(arr){
-  var newArr = arr.sort();
-  document.write(newArr[0] + '<br>');
-  document.write(newArr[1] + '<br>');
-  document.write(newArr[2] + '<br>');
-  document.write(newArr[3] + '<br>');
-  document.write(newArr[4] + '<br>');
+function name(arr) {
+    var newArr = arr.sort();
+    document.write(newArr[0] + '<br>');
+    document.write(newArr[1] + '<br>');
+    document.write(newArr[2] + '<br>');
+    document.write(newArr[3] + '<br>');
+    document.write(newArr[4] + '<br>');
 }
