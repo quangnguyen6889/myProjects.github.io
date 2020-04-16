@@ -112,11 +112,11 @@ body {
 
 	.photo {
 		margin: ;
-		width: 80%;
-		border: 10px solid lightblue;
+ 		width: 80%;
+/*		border: 10px solid lightblue; */
 		padding: 3px;
 		margin: 3%;
-		box-shadow: 5px 5px 10px 3px lightgrey;
+		box-shadow: 10px 10px 10px 5px lightgrey;
 		transition: transform 1s ease-in-out;
 	}
 

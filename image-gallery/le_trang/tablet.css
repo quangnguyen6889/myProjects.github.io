@@ -115,10 +115,10 @@ h1 {
 
 .photo {
 	width:43%;
-	border: 10px solid lightblue;
+/* 	border: 10px solid lightblue; */
 	padding: 3px;
 	margin: 2%;
-	box-shadow: 5px 5px 10px 3px lightgrey;
+	box-shadow: 10px 10px 10px 5px lightgrey;
 	transition: transform 1s ease-in-out;
 }
 
