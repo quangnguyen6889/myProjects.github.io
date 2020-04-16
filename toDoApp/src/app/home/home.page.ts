@@ -1,5 +1,7 @@
 import { Component, ɵɵpipeBind2 } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import { NavController } from '@ionic/angular';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -7,14 +9,17 @@ import { Storage } from '@ionic/storage';
     styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-    showlit: any;
+
     public addNew: string = "";
     public input: boolean = false;
     public closeButton: boolean = false;
-    getData: any[] = [];
+    public getData: any[] = [];
 
+    constructor(
+        public navController: NavController,
+        private router: Router
+    ) { }
 
-    constructor() { }
     showInput() {
         if (!this.input) {
             this.input = true;
@@ -38,7 +43,18 @@ export class HomePage {
 
     }
     saveData(event) {
-        // debugger
         this.getData.push({ 'name': this.addNew });
+        this.addNew = "";
     }
+
+
+
+    gotoDetail(valuevalue, vl2vl2) {
+        const navigationExtras: NavigationExtras = {
+            queryParams: { value: valuevalue, valuevalue: vl2vl2 }
+        };
+        this.router.navigate(['detail'], navigationExtras);
+        // this.router.navigateByUrl(link);
+    }
+
 }
