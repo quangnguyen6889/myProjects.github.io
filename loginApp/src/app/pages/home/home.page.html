@@ -20,4 +20,9 @@
             </ion-col>
         </ion-row>
 
+        <ion-button (click)="loginWithFB()">Log in with Facebook</ion-button>
+
+        <ion-card *ngIf="userData">
+            <ion-card-header>{{ userData.username }}</ion-card-header>
+        </ion-card>
     </ion-content>

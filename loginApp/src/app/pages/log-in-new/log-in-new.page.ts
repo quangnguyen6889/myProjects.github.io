@@ -2,14 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { TranslateService } from '@ngx-translate/core';
+import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
 
 @Component({
     selector: 'app-log-in',
-    templateUrl: './log-in.page.html',
-    styleUrls: ['./log-in.page.scss'],
+    templateUrl: './log-in-new.page.html',
+    styleUrls: ['./log-in-new.page.scss'],
 })
-export class LogInPage implements OnInit {
+export class LogInNewPage implements OnInit {
 
     language = "vietnamese";
     username = "";
@@ -19,7 +20,8 @@ export class LogInPage implements OnInit {
     constructor(
         private translateService: TranslateService,
         public navController: NavController,
-        private router: Router
+        private router: Router,
+        public fb: Facebook
     ) { }
 
     ngOnInit() {
@@ -81,7 +83,7 @@ export class LogInPage implements OnInit {
 
 
         if (this.username === this.admin && this.password === this.admin) {
-            this.router.navigate(['home']);
+            this.router.navigate(['tabs/home']);
         }
         // this.router.navigate(['home']);
         // console.log(this.username.length);
@@ -110,4 +112,13 @@ export class LogInPage implements OnInit {
     //     this.translateService.use('en');
     // }
 
+    logInWithFB() {
+        debugger
+        this.fb.login(['public_profile', 'user_friends', 'email'])
+            .then((res: FacebookLoginResponse) =>
+                //   console.log('Logged into Facebook!', res)
+                alert(JSON.stringify(res))
+            )
+            .catch(e => console.log('Error logging into Facebook', e));
+    }
 }

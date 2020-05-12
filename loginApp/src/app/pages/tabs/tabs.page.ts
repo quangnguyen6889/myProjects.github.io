@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
     selector: 'app-tabs',
@@ -7,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage implements OnInit {
 
-    constructor() { }
+    constructor(
+        public navController: NavController,
+        private router: Router
+    ) { }
 
     ngOnInit() {
     }
 
-    goToLogIn() {
-        console.log('hi hi');
+    logInNew() {
+        debugger
+        this.router.navigate(['log-in-new'])
     }
 
 }

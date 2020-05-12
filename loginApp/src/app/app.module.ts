@@ -16,6 +16,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 //     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 // }
 import { Camera } from '@ionic-native/camera/ngx';
+import { Facebook } from '@ionic-native/facebook/ngx';
+
 
 export function httpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -43,6 +45,7 @@ export function httpLoaderFactory(httpClient: HttpClient) {
         StatusBar,
         SplashScreen,
         Camera,
+        Facebook,
         { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
     ],
     bootstrap: [AppComponent]

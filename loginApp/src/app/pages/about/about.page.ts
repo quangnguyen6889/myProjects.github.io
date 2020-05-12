@@ -10,6 +10,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 export class AboutPage implements OnInit {
     capturedSnapURL: string;
     cameraOptions: CameraOptions;
+    photos = [];
 
     constructor(
         public actionSheetController: ActionSheetController,
@@ -58,11 +59,15 @@ export class AboutPage implements OnInit {
             sourceType: value == 1 ? this.camera.PictureSourceType.CAMERA : this.camera.PictureSourceType.PHOTOLIBRARY
         }
         this.camera.getPicture(this.cameraOptions).then((imageData) => {
+            debugger
             // this.camera.DestinationType.FILE_URI gives file URI saved in local
             // this.camera.DestinationType.DATA_URL gives base64 URI
 
             let base64Image = 'data:image/jpeg;base64,' + imageData;
             this.capturedSnapURL = base64Image;
+
+            this.photos.push({ key: this.capturedSnapURL });
+
         }, (err) => {
 
             console.log(err);
