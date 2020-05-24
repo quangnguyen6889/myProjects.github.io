@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DOM</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p class="theP">Windows talking painted pasture yet its express parties use.</p>
+	<p class="theP" id="theP" >Sure last upon he same as knew next.
+		<a href="#">link</a>
+	</p>
+	<p class="theP">Of believed or diverted no rejoiced.</p>
+	<p class="theP">End friendship sufficient assistance can prosperous met.</p>
+	<p class="theP" id="any">As game he show it park do.</p>
+
+	<script>
+		// document.getElementsByTagName
+		let tagName = document.getElementsByTagName('p'); /* Lay tat ca the p gan vao bien tagName */
+		tagName[1].style.color ='red';	/* Gan cho the 'p' thu 2 co thuoc tinh style="color: red;" */
+		tagName[4].style.backgroundColor ='yellow';  /* Gan cho the 'p' thu 5 co thuoc tinh style="background-color: yellow;" */
+
+		for (i = 0; i < tagName.length; i++) {  	/* Loc qua toan bo the p trong mang 'tagName' */
+			if (i % 2 == 0) {
+				tagName[i].style.color ='red';  	/* Neu i la so chan thi the p co mau do */
+			} else {
+				tagName[i].style.color ='green';  	/* Neu i la so le thi the p co mau xanh */
+			}
+		}
+		// document.getElementsByTagName
+
+
+
+		// document.getElementsByClass
+		let className = document.getElementsByClassName('theP');	/* Lay tat ca the p gan vao bien className */
+		// document.getElementsByClass
+
+
+
+		// document.getElementById
+		let idName = document.getElementById('theP');	/* Lay the p co id="theP" gan vao bien idName */
+		idName.style.color ='blue';
+		// document.getElementById
+
+
+
+		// document.querySelector & document.querySelectorAll
+		let querySelector = document.querySelector('p', '.theP', '#theP');	/* Chỉ lấy được đối tượng đầu tiên trong trang để gán vào biến querySelector (thông qua tagName hoặc class hoặc id) */
+
+		document.querySelectorAll('p')	/* Lấy được tất cả những thẻ có tagName hoặc class giống nhau và truy cập được vào thẻ con của nó (nếu có) */
+
+
+
+		// .innerText
+		let innerText = document.getElementById('theP').innerText;	/* Chỉ lấy text đơn thuần */
+		// console.log(innerText);
+		// innerText
+
+
+
+		// innerHTML
+		let innerHTML = document.getElementById('theP').innerHTML;	/* Lấy được cả text lẫn các thẻ HTML bên trong */
+		// console.log(innerHTML);
+		// innerHTML
+
+
+
+		// getAttribute('');
+		let getAttribute = document.getElementById('theP').getAttribute('id');	/* Lấy giá trị của thuộc tính id của thẻ p có id="theP" */
+		// console.log(getAttribute);
+		// getAttribute('');
+		
+
+
+
+		// setAttribute('')
+		let setAttribute = document.getElementById('any').setAttribute('id', 'khac');	/* Gán giá trị 'khac' cho thuộc tính id của thẻ p */
+		// console.log(setAttribute);
+		// setAttribute('')
+		
+
+
+		document.getElementById('khac').innerHTML = 'tiếng Việt';	/* Gán nội dung mới cho thẻ p có id="khac" */
+
+
+
+
+	</script>
+</body>
+</html>
