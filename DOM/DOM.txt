@@ -1,0 +1,9 @@
+DOM (Document Object Model)
+
+Có bao nhiêu loại DOM
+	- DOM Selector: tagName, id, class, attribute
+	- DOM HTML: thay đổi attribute, content của thẻ HTML
+	- DOM Event: Cung cấp các sự kiện để tác động vào đối tượng HTML (click, hover, cuộn, doubleClick, chuôt phải).
+	- DOM style: thay đổi tất cả các thuộc tính css của thẻ.
+	-DOM listener: Lắng nghe các sự kiện hành động tác động lên thẻ
+
